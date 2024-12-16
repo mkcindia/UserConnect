@@ -1,0 +1,65 @@
+# Node.js and npm related
+client/node_modules/
+server/node_modules/
+
+# Next.js build output
+.next/
+
+# Build output (for production)
+build/
+
+# Environment files (Never commit sensitive info like DB credentials, API keys)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm-debug.log
+npm-debug.log*
+
+# Yarn lock file if you use Yarn
+yarn.lock
+
+# Optional directory for VS Code workspace
+.vscode/
+
+# Optional directory for IntelliJ IDEA or WebStorm workspace
+.idea/
+
+# Optional directory for Eclipse IDE
+.project
+.classpath
+
+# Coverage reports (if you use code coverage tools)
+coverage/
+
+# Express-related
+# Ignore generated files and folders for your backend
+server/node_modules/
+
+# Ignore database data if using SQLite, etc.
+db/
+
+# Docker-related (if you use Docker)
+.docker/
+
+# Optional lock files for specific environments or testing tools
+pnp-debug.log
+
+# Ignore cloud storage or external service files (like Heroku logs, etc.)
+heroku/
+
+# Optional - Files for serverless functions or cloud deploys
+vercel/
+
+# Public and private keys
+*.pem
+*.key

@@ -1,0 +1,61 @@
+/userconnect
+│
+├── /client                     # Next.js front-end (React)
+│   ├── /components             # React components (UI elements)
+│   ├── /pages                  # Next.js pages (for routing and views)
+│   │   ├── /api                # API routes for handling requests from the front-end
+│   │   ├── /auth               # Authentication pages (Login, Register, etc.)
+│   │   ├── /profile            # Profile management views
+│   │   ├── /dashboard          # Admin dashboard views
+│   │   └── index.js            # Home page (entry point)
+│   ├── /public                 # Static assets (images, fonts, etc.)
+│   └── /styles                 # Global styles (CSS, SCSS)
+│
+├── /server                     # Node.js and Express back-end
+│   ├── /controllers            # Logic for handling requests
+│   ├── /models                 # MongoDB models (User, Role, etc.)
+│   ├── /routes                 # Express routes for API endpoints
+│   ├── /middleware             # Custom middleware (authentication, authorization, etc.)
+│   ├── /config                 # Configuration files (MongoDB, JWT secrets, etc.)
+│   ├── /utils                  # Utility functions (helpers for email, notifications)
+│   └── server.js               # Express server entry point
+│
+├── /database                   # MongoDB-related files
+│   └── /migrations             # (Optional) Database migrations (if needed)
+│
+├── /scripts                    # Any scripts (e.g., for seeding data, running migrations)
+│
+├── .env                        # Environment variables (database URL, JWT secret, etc.)
+├── .gitignore                  # Git ignore file
+├── package.json                # Dependencies and scripts
+├── next.config.js              # Next.js configuration
+└── README.md                   # Project documentation
+
+
+
+Breakdown of Key Folders and Files:
+/client: The Next.js front-end of the application, where all React components, pages, and styles are managed.
+
+/components: Contains individual UI elements like buttons, forms, profile cards, etc.
+/pages: Where the Next.js pages are located, including dynamic pages like profile.js, dashboard.js, and index.js.
+/public: Static files that can be served directly, such as images or fonts.
+/styles: Global CSS or SCSS styles for your application.
+/server: The backend section powered by Express and Node.js.
+
+/controllers: Contains the logic for handling requests, such as creating or updating user profiles, sending emails, etc.
+/models: Defines the MongoDB data models (e.g., User, Role, Profile).
+/routes: Defines the Express API routes to handle requests from the front-end, such as /api/users, /api/auth/login, etc.
+/middleware: Contains custom middleware, like authentication (JWT validation) and authorization (role checking).
+/config: Contains configuration files for the server (e.g., MongoDB connection settings, JWT secret).
+/utils: Helper functions like email sending, notifications, and birthday reminders.
+/database: MongoDB-related configurations and migrations, if you have a system for seeding data or running schema migrations.
+
+/scripts: Scripts for tasks like database seeding, batch updates, or any other automation you might need.
+
+Key Files:
+.env: Store environment-specific settings like your MongoDB URI and JWT secrets.
+server.js: The entry point for the Express server that starts the application.
+package.json: Handles all project dependencies and NPM scripts.
+next.config.js: Configuration for the Next.js app, such as custom webpack settings, environment variables, or other configurations.
+README.md: Contains project documentation, setup instructions, and additional details.
+This structure will provide a clean separation between the client and server-side code, allowing for easier maintenance and future scalability.
